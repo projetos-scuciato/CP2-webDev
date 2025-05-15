@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1 class="logo">WC</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#">Carros</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="./quiz.html">Quiz</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="container-quiz">
+    <div class="quiz">
+        <h1>Aprenda Progamação</h1>
+        <section id="container-perguntas">
+            <h2 id="pergunta"></h2>
+            <div id="container-respostas">
+                <input type="text" id="resposta" placeholder="Digite sua Resposta">
+            </div>
+            <button id="proximo">Próxima Pergunta</button>
+            <p id="message"></p>
+        </section>
+        <section id="container-resultado" class="hidden">
+            <h2>Resultado do Quiz</h2>
+            <ul id="lista-resultado"></ul>
+            <button id="inicio-btn">Reiniciar</button>
+        </section>
+        </div>
+    </main>
+    <script src="../src/js/quiz.js"></script>
+</body>
+</html>
