@@ -21,22 +21,23 @@
         </div>
     </header>
     <main id="container-quiz">
-    <div class="quiz">
-        <h1>Aprenda Progamação</h1>
-        <section id="container-perguntas">
-            <h2 id="pergunta"></h2>
-            <div id="container-respostas">
-                <input type="text" id="resposta" placeholder="Digite sua Resposta">
-            </div>
-            <button id="proximo">Próxima Pergunta</button>
-            <p id="message"></p>
-        </section>
-        <section id="container-resultado" class="hidden">
-            <h2>Resultado do Quiz</h2>
-            <ul id="lista-resultado"></ul>
-            <button id="inicio-btn">Reiniciar</button>
-        </section>
-        </div>
+    <div class="quiz-container">
+  <h1>Qual é o carro ideal para você?</h1>
+  <div id="quiz-content">
+    <div id="question-container" class="hidden">
+      <div id="question"></div>
+      <div class="answer-btns" id="answer-buttons"></div>
+      <button id="next-btn" disabled>Próxima</button>
+    </div>
+    <div id="start-container">
+      <button id="start-btn">Iniciar Quiz</button>
+    </div>
+    <div id="result-container" class="hidden">
+      <div id="result"></div>
+      <button id="restart-btn">Reiniciar Quiz</button>
+    </div>
+  </div>
+</div>
     </main>
     <script src="../src/js/quiz.js"></script>
 </body>

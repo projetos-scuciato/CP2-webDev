@@ -269,3 +269,100 @@ header{
   color: #000;
 }
 
+/* Estilos específicos do quiz */
+.quiz-container {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.quiz-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+#question {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+  min-height: 60px;
+}
+
+.answer-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+button.answer {
+  background: #e7e7e7;
+  border: 2px solid #28a745;
+  color: #333;
+  font-size: 1.1rem;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+  text-align: left;
+}
+
+button.answer:hover {
+  background: #28a745;
+  color: #fff;
+}
+
+button#next-btn,
+button#start-btn,
+button#restart-btn {
+  margin-top: 25px;
+  background: #28a745;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 12px 28px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+button#next-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  color: #666;
+}
+
+button#start-btn:hover,
+button#next-btn:hover:not(:disabled),
+button#restart-btn:hover {
+  background: #1e7e34;
+}
+
+#result {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+#car-name {
+  font-weight: 800;
+  font-size: 1.8rem;
+  color: #28a745;
+  margin-top: 12px;
+}
+
+#car-description {
+  margin-top: 15px;
+  font-size: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
