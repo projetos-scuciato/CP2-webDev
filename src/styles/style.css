@@ -245,7 +245,7 @@ header{
 
 #main-sobre{
   width: 100%;
-  height: 84vh;
+  height: 104vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -258,9 +258,14 @@ header{
   width: 50%;
 }
 
-#texto-sobre{
-  display: flex;
+#texto-sobre {
   text-align: justify;
   padding: 80px;
+}
+
+#sobre-titulo {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #000;
 }
 
