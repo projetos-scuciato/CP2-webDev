@@ -8,61 +8,54 @@
 </head>
 <body>
     <header>
-        <h1>WC</h1>
-        <section>
-            <div>
-                <ul>
-                    <li>Home</li>
-                    <li>Carros</li>
-                    <li>Produtos</li>
-                    <li>Contato</li>
+        <div class="navbar">
+            <h1 class="logo">WC</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">Carros</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Contato</a></li>
                 </ul>
-            </div>
-        </section>
+            </nav>
+        </div>
+    </header>
     <main>
-        <h2>Veja nossos carros disponíveis</h2>
+        <h2 id="tag">Veja nossos carros disponíveis</h2>
 
         <div class="carrossel-container">
             <div class="carrossel" id="carrossel">
             <div class="carrossel-item">
                 <img src="./src/assets/onix.png" alt="Carro 1">
-                <p><strong>Chevrolet Onix</strong> - R$ 45.000</p>
+                <p class="description"><strong>Chevrolet Onix</strong></p>
+                <input type="button" value="Saiba Mais" class="saiba_mais">
             </div>
             <div class="carrossel-item">
                 <img src="./src/assets/renegade.png" alt="Carro 2">
-                <p><strong>Jeep Renegade</strong> - R$ 95.000</p>
+                <p class="description"><strong>Jeep Renegade</strong> </p>
+                <input type="button" value="Saiba Mais" class="saiba_mais">
             </div>
             <div class="carrossel-item">
                 <img src="./src/assets/bmw_x1.png" alt="Carro 3">
-                <p><strong>BMW X1</strong> - R$ 210.000</p>
+                <p class="description"><strong>BMW X1</strong></p>
+                <input type="button" value="Saiba Mais" class="saiba_mais">
             </div>
             </div>
         </div>
 
-    <div class="controles">
-        <button onclick="anterior()">Anterior</button>
-        <button onclick="proximo()">Próximo</button>
-
-        <!-- Botão Anterior -->
         <button class="controle-lateral anterior" onclick="anterior()">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
-        </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+            </svg>
         </button>
-
-        <!-- Botão Próximo -->
         <button class="controle-lateral proximo" onclick="proximo()">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
-        </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+            </svg>
         </button>
-    </div>
-    
-    </div>
-
-        
+   
     </main>
-    </header>
+    
     <script src="./src/js/script.js"></script>
 
 
