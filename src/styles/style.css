@@ -1,0 +1,59 @@
+* { box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; padding: 20px; background: #f5f5f5; }
+
+    .carrossel-container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      background: white;
+      position: relative;
+    }
+
+    .carrossel {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .carrossel-item {
+      min-width: 100%;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .carrossel-item img {
+      width: 80%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .controle-lateral {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(255, 255, 255, 0.7);
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 50%;
+      transition: background 0.3s;
+    }
+
+    .controle-lateral:hover {
+      background-color: rgba(255, 255, 255, 1);
+    }
+
+    .anterior {
+      left: 10px;
+    }
+
+    .proximo {
+      right: 10px;
+    }
+
+    .controle-lateral svg {
+      width: 30px;
+      height: 30px;
+      fill: #333;
+    }
