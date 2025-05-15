@@ -27,6 +27,8 @@ header{
   background-color: white;
  }
 
+
+
 .logo {
   font-size: 32px;
   font-weight: bold;
@@ -240,3 +242,25 @@ header{
 #inicio-btn:hover {
     background-color: #1e7e34;
 }
+
+#main-sobre{
+  width: 100%;
+  height: 84vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+}
+
+#sobre-container{
+  display: flex;
+  width: 50%;
+}
+
+#texto-sobre{
+  display: flex;
+  text-align: justify;
+  padding: 80px;
+}
+
