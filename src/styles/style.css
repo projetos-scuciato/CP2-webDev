@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Exile&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -11,12 +14,11 @@ body {
 }
     
 header{
-  background: #fff;
-  color:#333;
+  background: rgb(62, 62, 62);
+  color:#ccc;
   padding: 15px;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 5px 5px 5px  #000000;
 }
 
 .navbar {
@@ -24,12 +26,12 @@ header{
   justify-content: space-between;
   align-items: center;
   padding: 5px 30px 5px 50px;
-  background-color: white;
  }
 
 
 
 .logo {
+  font-family: "Exile", system-ui;
   font-size: 32px;
   font-weight: bold;
 }
@@ -43,15 +45,14 @@ header{
 }
 
 .menu li a {
+  font-family: "Outfit", sans-serif;
+  text-transform: uppercase;
   text-decoration: none;
-  color: black;
-  font-size: 18px;
-}
-
-.menu li a {
+  font-size: 14px;
+  font-weight: bold;
   position: relative;
   text-decoration: none;
-  color: #000000;
+  color: #ccc;
 }
 
 .menu li a::after {
@@ -61,7 +62,7 @@ header{
   bottom: -2px; 
   width: 0;
   height: 2px;
-  background-color: #000000;
+  background-color: #ccc;
   transition: width 0.4s ease;
 }
 
@@ -69,9 +70,27 @@ header{
   width: 100%;
 }
 
+
+main{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  background-image: url(../assets/background.jpg);
+  background-size: cover;
+  background-position: relative;
+  background-repeat: no-repeat;
+}
+
 #tag{
-  color: #030303;
-  font-weight: 500;
+  font-family: "Outfit", sans-serif;
+  text-transform: uppercase;
+  color: #ccc;
+  font-size: 20px;
+  font-weight: bold;
   text-align: center;
   padding: 40px;
 }
@@ -81,8 +100,6 @@ header{
   margin: auto;
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-  background: white;
   position: relative;
 }
 
@@ -93,36 +110,57 @@ header{
 
 .carrossel-item {
   min-width: 100%;
-  padding: 20px;
   text-align: center;
 }
 
 .carrossel-item img {
-  width: 80%;
-  height: auto;
-  border-radius: 10px;
+  width: 70%;
+  height: 80%;
+  border-radius: 20px;
 }
 
 .controle-lateral {
+  color: white;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.7);
   border: none;
   padding: 10px;
   cursor: pointer;
   border-radius: 50%;
-  transition: background 0.3s;
+  background: none;
+  transition: background 0.8s;
 }
 
 .controle-lateral:hover {
+  transition: 0.8s;
   background-color: rgba(255, 255, 255, 1);
-}
+  color: black;
+} 
 
 .description{
-  padding: 35px;
+  padding: 15px;
   font-size: 1.5rem;
+  font-family: "Outfit", sans-serif;
+  color: #CCC;
+ }
+
+ .saiba_mais{
   font-family: sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #CCC;
+  background: rgb(62, 62, 62);
+  border: none;
+  padding: 14px 44px 14px 44px;
+  border-radius: 10px;
+ }
+
+ .saiba_mais:hover{
+  transition: 0.8s;
+  transform: scale(1.05);
+  background-color: rgb(92, 92, 92);
  }
 
 .anterior {
@@ -134,9 +172,15 @@ header{
 }
 
 .controle-lateral svg {
-  width: 30px;
-  height: 30px;
-  fill: #333;
+  width: 40px;
+  height: 40px;
+  fill: #CCC;
+  transition: fill 0.6s;
+}
+
+.controle-lateral svg:hover{
+  transition: 0.6s;
+  fill: #555;
 }
 
 #container-quiz{
@@ -148,7 +192,7 @@ header{
 }
 
 .quiz{
-    background: #CCC;
+    background: rgb(62, 62, 62);
     padding: 30px;
     border-radius: 10px;
     width: 80%;
@@ -162,8 +206,8 @@ header{
 }
 
 #container-perguntas h2{
-    color:green;
-    margin-bottom: 20px;
+  color:green;
+  margin-bottom: 20px;
 }
 #container-respostas{
     margin-bottom: 20px;
@@ -228,7 +272,7 @@ header{
 }
 
 #inicio-btn {
-    background-color: #28a745;
+    background-color: #CCC;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -236,42 +280,38 @@ header{
     cursor: pointer;
     font-size: 16px;
     margin-top: 20px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.8s ease;
 }
 
 #inicio-btn:hover {
-    background-color: #1e7e34;
-}
-
-#main-sobre{
-  width: 100%;
-  height: 104vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 60px;
+    background-color: #CCC;
 }
 
 #sobre-container{
+  background-color: rgb(0, 0, 0, 0.5);
+  border-radius: 30px;
   display: flex;
-  width: 50%;
+  width: 60%;
+  padding: 0px 20px 20px 20px; 
 }
 
 #texto-sobre {
+  color: #CCC;
+  font-family: sans-serif;
   text-align: justify;
-  padding: 80px;
+  padding: 20px;
 }
 
 #sobre-titulo {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #000;
+  font-family: "Outfit", sans-serif;
+  padding: 10px 0px 20px 0px;
+  font-size: 48px;
+  color: #CCC;
 }
 
 /* Estilos específicos do quiz */
 .quiz-container {
-  background: #fff;
+  background: rgb(62, 62, 62);
   padding: 30px 40px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -282,12 +322,15 @@ header{
 }
 
 .quiz-container h1 {
+  font-family: sans-serif;
   text-align: center;
   margin-bottom: 20px;
-  color: #000;
+  color: #CCC;
 }
 
 #question {
+  font-family: sans-serif;
+  color: #CCC;
   font-size: 1.25rem;
   margin-bottom: 20px;
   min-height: 60px;
@@ -300,51 +343,55 @@ header{
 }
 
 button.answer {
-  background: #e7e7e7;
-  border: 2px solid #28a745;
-  color: #333;
+  background: rgb(92, 92, 92);
+  border: 2px solid #444;
+  color: #CCC;
   font-size: 1.1rem;
   padding: 12px 20px;
   border-radius: 8px;
   cursor: pointer;
-  transition: background 0.3s ease, color 0.3s ease;
+  transition: background 0.6s ease, color 0.6s ease;
   text-align: left;
 }
 
 button.answer:hover {
-  background: #28a745;
-  color: #fff;
+  background: rgb(62, 62, 62);
+  color: white;
 }
 
 button#next-btn,
 button#start-btn,
 button#restart-btn {
   margin-top: 25px;
-  background: #28a745;
+  background: #CCC;
   border: none;
-  color: #fff;
+  color: #555;
   font-size: 1.2rem;
   padding: 12px 28px;
   border-radius: 10px;
   cursor: pointer;
   width: 100%;
   font-weight: 700;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.8s ease;
 }
 
 button#next-btn:disabled {
   background: #ccc;
   cursor: not-allowed;
-  color: #666;
+  color: #555;
 }
 
 button#start-btn:hover,
 button#next-btn:hover:not(:disabled),
 button#restart-btn:hover {
-  background: #1e7e34;
+  transition: 0.8s;
+  background: #777;
+  color: white;
 }
 
 #result {
+  font-family: sans-serif;
+  color: #CCC;
   margin-top: 20px;
   text-align: center;
   font-size: 1.4rem;
@@ -353,7 +400,7 @@ button#restart-btn:hover {
 #car-name {
   font-weight: 800;
   font-size: 1.8rem;
-  color: #28a745;
+  color: white;
   margin-top: 12px;
 }
 
@@ -375,15 +422,15 @@ button#restart-btn:hover {
     padding: 20px;
 }
 .price {
+  font-family: sans-serif;
     font-size: 18px;
     font-weight: bold;
     color: #27ae60;
-    margin-top: 5px;
 }
 .card {
-    background: #f8f8f8;
+    background: rgb(62, 62, 62);
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 2px 2px   rgba(0, 0, 0, 0.2);
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
     text-align: center;
@@ -398,4 +445,16 @@ button#restart-btn:hover {
 
 .card:hover {
     transform: scale(1.05);
+}
+
+footer{
+  font-family: "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #CCC;
+  display: flex;
+  background: rgb(62, 62, 62);
+  padding: 30px 0px 30px 30px ;
+  display: grid;
+  gap: 10px;
 }

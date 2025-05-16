@@ -180,15 +180,15 @@ function selectAnswer(e) {
 
   // Unselect all other buttons
   Array.from(answerButtons.children).forEach(button => {
-    button.style.backgroundColor = '#e7e7e7';
-    button.style.color = '#333';
-    button.style.borderColor = '#28a745';
+    button.style.backgroundColor = '#777';
+    button.style.color = '#CCC';
+    button.style.borderColor = '#555';
   });
 
   // Highlight selected button
-  e.target.style.backgroundColor = '#28a745';
+  e.target.style.backgroundColor = '#333';
   e.target.style.color = '#fff';
-  e.target.style.borderColor = '#28a745';
+  e.target.style.borderColor = '#333';
 
   selectedAnswer = chosenCar;
   nextBtn.disabled = false;
