@@ -374,7 +374,12 @@ button#restart-btn:hover {
     align-items: center;
     padding: 20px;
 }
-
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #27ae60;
+    margin-top: 5px;
+}
 .card {
     background: #f8f8f8;
     border-radius: 10px;
